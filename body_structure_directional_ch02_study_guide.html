@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 2 — Body Structure & Directional Terminology | Medical Terminology Study Guide</title>
+<style>
+:root{
+  --color-background-primary:#ffffff;--color-background-secondary:#f7f7f7;
+  --color-background-info:#e8f0fc;--color-background-success:#e6f4ea;
+  --color-background-warning:#fff8e1;--color-background-danger:#fce8e8;
+  --color-text-primary:#111111;--color-text-secondary:#555555;--color-text-tertiary:#888888;
+  --color-text-info:#1a5c9c;--color-text-success:#1b5e20;
+  --color-text-warning:#854F0B;--color-text-danger:#9c2020;
+  --color-border-primary:rgba(0,0,0,0.4);--color-border-secondary:rgba(0,0,0,0.18);
+  --color-border-tertiary:rgba(0,0,0,0.09);
+  --color-border-info:#185FA5;--color-border-success:#0F6E56;
+  --color-border-warning:#854F0B;--color-border-danger:#c62828;
+  --border-radius-md:8px;--border-radius-lg:12px;
+}
+@media(prefers-color-scheme:dark){
+  :root{
+    --color-background-primary:#1e1e1e;--color-background-secondary:#2a2a2a;
+    --color-background-info:#0d2a45;--color-background-success:#0d2a1a;
+    --color-background-warning:#2a1f00;--color-background-danger:#2a0d0d;
+    --color-text-primary:#eeeeee;--color-text-secondary:#aaaaaa;--color-text-tertiary:#666666;
+    --color-text-info:#7ab3e8;--color-text-success:#81c784;
+    --color-text-warning:#ffcc66;--color-text-danger:#e57373;
+    --color-border-primary:rgba(255,255,255,0.4);--color-border-secondary:rgba(255,255,255,0.15);
+    --color-border-tertiary:rgba(255,255,255,0.08);
+    --color-border-info:#4a90d9;--color-border-success:#4caf78;
+    --color-border-warning:#ffb74d;--color-border-danger:#e57373;
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--color-background-secondary);color:var(--color-text-primary);line-height:1.6;padding:0 0 3rem}
+.page-header{background:var(--color-background-primary);border-bottom:0.5px solid var(--color-border-secondary);padding:1.25rem 2rem;margin-bottom:1.5rem}
+.page-header h1{font-size:22px;font-weight:500}.page-header p{font-size:14px;color:var(--color-text-secondary);margin-top:3px}
+.container{max-width:900px;margin:0 auto;padding:0 1.25rem}
+.sg{padding:.5rem 0 2rem}
+.tab-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1.25rem}
+.tab-btn{padding:6px 13px;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-secondary);font-size:13px;cursor:pointer;transition:all .15s}
+.tab-btn.active{background:var(--color-background-info);color:var(--color-text-info);border-color:var(--color-border-info)}
+.tab-btn:hover:not(.active){background:var(--color-background-secondary)}
+.sec{display:none}.sec.active{display:block}
+.sec-hdr{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--color-text-secondary);margin:1.4rem 0 .65rem;padding-bottom:4px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.pg{font-size:14px;color:var(--color-text-secondary);line-height:1.7;margin-bottom:1rem;background:var(--color-background-secondary);padding:.75rem 1rem;border-radius:var(--border-radius-md)}
+.stat-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:1.25rem}
+.stat-chip{padding:6px 14px;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-tertiary);font-size:13px;background:var(--color-background-primary)}
+.stat-chip strong{font-weight:600}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+.ccard{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:.9rem 1.1rem}
+.ccard .ctitle{font-size:14px;font-weight:600;color:var(--color-text-primary);margin-bottom:5px}
+.ccard .cwt{font-size:11px;font-weight:600;padding:2px 7px;border-radius:var(--border-radius-md);display:inline-block;margin-bottom:6px}
+.ccard .cdef{font-size:12px;color:var(--color-text-secondary);line-height:1.55}
+.dtable{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:.5rem;table-layout:fixed;background:var(--color-background-primary);border-radius:var(--border-radius-lg);overflow:hidden}
+.dtable th{text-align:left;padding:8px 12px;background:var(--color-background-secondary);border-bottom:0.5px solid var(--color-border-secondary);color:var(--color-text-secondary);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+.dtable td{padding:9px 12px;border-bottom:0.5px solid var(--color-border-tertiary);vertical-align:top;color:var(--color-text-secondary)}
+.dtable tr:last-child td{border-bottom:none}
+.dtable tr:hover td{background:var(--color-background-secondary)}
+.dtable .wp{font-weight:600;font-style:italic;color:var(--color-text-primary);font-size:14px}
+.dtable .mean{font-weight:600;color:var(--color-text-primary)}
+.tpill{display:inline-block;font-size:11px;padding:2px 7px;border-radius:var(--border-radius-md);font-weight:600}
+.opp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin-bottom:.75rem}
+.opp-pair{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);overflow:hidden}
+.opp-header{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;padding:5px 12px;color:var(--color-text-secondary)}
+.opp-row{display:flex}
+.opp-side{flex:1;padding:.85rem 1rem}
+.opp-side:first-child{border-right:0.5px solid var(--color-border-tertiary)}
+.opp-term{font-size:15px;font-weight:600;color:var(--color-text-primary);margin-bottom:3px}
+.opp-cf{font-size:11px;font-weight:600;padding:1px 6px;border-radius:var(--border-radius-md);display:inline-block;margin-bottom:5px}
+.opp-def{font-size:12px;color:var(--color-text-secondary);line-height:1.5}
+.hier-chain{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:1.25rem}
+.hier-node{padding:8px 14px;border-radius:var(--border-radius-md);font-size:13px;font-weight:500;border:0.5px solid;text-align:center}
+.hier-arr{font-size:18px;color:var(--color-text-tertiary)}
+.region-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:1.25rem;max-width:500px}
+.region-cell{background:var(--color-background-primary);border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);padding:.6rem .8rem;font-size:12px;text-align:center}
+.region-cell .rn{font-weight:600;color:var(--color-text-primary);font-size:13px}
+.region-cell .rs{font-size:11px;color:var(--color-text-secondary);margin-top:2px}
+.quad-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:1.25rem;max-width:400px}
+.quad-cell{background:var(--color-background-primary);border:1px solid var(--color-border-secondary);border-radius:var(--border-radius-md);padding:.75rem .9rem;text-align:center}
+.quad-cell .qn{font-weight:600;font-size:13px;color:var(--color-text-primary)}
+.quad-cell .qa{font-size:11px;color:var(--color-text-secondary);margin-top:2px}
+.quad-cell .qo{font-size:11px;color:var(--color-text-tertiary);margin-top:3px;font-style:italic}
+.fc-controls{display:flex;align-items:center;gap:10px;margin-bottom:1.25rem;flex-wrap:wrap}
+.fc-sel{padding:6px 10px;border-radius:var(--border-radius-md);border:1px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-primary);font-size:14px}
+.flashcard{background:var(--color-background-primary);border:1px solid var(--color-border-secondary);border-radius:var(--border-radius-lg);padding:1.75rem;min-height:175px;display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer;position:relative}
+.flashcard:hover{border-color:var(--color-border-primary)}
+.fc-badge{position:absolute;top:11px;left:13px;font-size:11px;padding:2px 7px;border-radius:var(--border-radius-md);font-weight:600}
+.fc-front{font-size:21px;font-weight:500;text-align:center;color:var(--color-text-primary)}
+.fc-back{display:none;text-align:center}
+.fc-back .meaning{font-size:16px;font-weight:500;color:var(--color-text-primary);margin-bottom:5px}
+.fc-back .example{font-size:12px;color:var(--color-text-secondary)}
+.fc-hint{font-size:12px;color:var(--color-text-tertiary);margin-top:.75rem}
+.fc-prog{font-size:13px;color:var(--color-text-secondary);margin-left:auto}
+.fc-actions{display:flex;gap:8px;margin-top:.9rem;flex-wrap:wrap;justify-content:center}
+.btn{padding:7px 16px;border-radius:var(--border-radius-md);border:1px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-primary);font-size:14px;cursor:pointer;transition:all .15s}
+.btn:hover{background:var(--color-background-secondary)}
+.btn-ok{border-color:var(--color-border-success);color:var(--color-text-success)}.btn-ok:hover{background:var(--color-background-success)}
+.btn-no{border-color:var(--color-border-danger);color:var(--color-text-danger)}.btn-no:hover{background:var(--color-background-danger)}
+.fc-score{font-size:13px;color:var(--color-text-secondary);margin-top:.75rem}
+.ref-bar{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:.75rem;align-items:center}
+.ref-search{flex:1;min-width:170px;padding:8px 12px;border-radius:var(--border-radius-md);border:1px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-primary);font-size:14px}
+.filt{padding:5px 11px;border-radius:var(--border-radius-md);border:1px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-secondary);font-size:12px;cursor:pointer}
+.filt.active{background:var(--color-background-secondary);color:var(--color-text-primary);border-color:var(--color-border-primary)}
+.ref-table{width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed;background:var(--color-background-primary);border-radius:var(--border-radius-lg);overflow:hidden}
+.ref-table th{text-align:left;padding:8px 12px;background:var(--color-background-secondary);border-bottom:0.5px solid var(--color-border-secondary);color:var(--color-text-secondary);font-weight:600;font-size:11px;text-transform:uppercase}
+.ref-table td{padding:8px 12px;border-bottom:0.5px solid var(--color-border-tertiary);vertical-align:top}
+.ref-table tr:hover td{background:var(--color-background-secondary)}
+.ref-table col:first-child{width:24%}.ref-table col:nth-child(2){width:13%}
+.quiz-q{background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:1rem 1.15rem;margin-bottom:1rem;font-size:15px;font-weight:500;line-height:1.5}
+.quiz-opts{display:flex;flex-direction:column;gap:7px;margin-bottom:1rem}
+.qopt{padding:9px 13px;border-radius:var(--border-radius-md);border:1px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-primary);font-size:14px;cursor:pointer;text-align:left;transition:all .15s}
+.qopt:hover:not(:disabled){background:var(--color-background-secondary)}
+.qopt.correct{background:var(--color-background-success);border-color:var(--color-border-success);color:var(--color-text-success)}
+.qopt.wrong{background:var(--color-background-danger);border-color:var(--color-border-danger);color:var(--color-text-danger)}
+.qfb{font-size:13px;margin-bottom:.9rem;min-height:16px}
+.qctr{font-size:12px;color:var(--color-text-tertiary)}
+.score-wrap{background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:2rem;text-align:center}
+.score-num{font-size:40px;font-weight:500}
+.score-lbl{font-size:14px;color:var(--color-text-secondary);margin-top:4px}
+</style>
+</head>
+<body>
+<div class="page-header">
+  <div style="max-width:900px;margin:0 auto">
+    <h1>Chapter 2 — Body Structure &amp; Directional Terminology</h1>
+    <p>Medical Terminology Study Guide &nbsp;·&nbsp; 7 Prefixes &nbsp;·&nbsp; 2 Suffixes &nbsp;·&nbsp; 18 Combining Forms &nbsp;·&nbsp; 33 Key Terms &nbsp;·&nbsp; 9 Abdominopelvic Regions &nbsp;·&nbsp; 4 Quadrants &nbsp;·&nbsp; 5 Body Planes</p>
+  </div>
+</div>
+<div class="container"><div class="sg">
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="showTab('overview',this)">Overview</button>
+  <button class="tab-btn" onclick="showTab('directional',this)">Directional Terms</button>
+  <button class="tab-btn" onclick="showTab('regions',this)">Body Regions</button>
+  <button class="tab-btn" onclick="showTab('prefixes',this)">Prefixes &amp; Suffixes</button>
+  <button class="tab-btn" onclick="showTab('combining',this)">Combining Forms</button>
+  <button class="tab-btn" onclick="showTab('keyterms',this)">Key Terms</button>
+  <button class="tab-btn" onclick="showTab('flashcards',this)">Flashcards</button>
+  <button class="tab-btn" onclick="showTab('quiz',this)">Quiz</button>
+</div>
+
+<!-- OVERVIEW -->
+<div class="sec active" id="tab-overview">
+  <div class="stat-row">
+    <span class="stat-chip"><strong>7</strong> prefixes</span>
+    <span class="stat-chip"><strong>2</strong> suffixes</span>
+    <span class="stat-chip"><strong>18</strong> combining forms</span>
+    <span class="stat-chip"><strong>33</strong> key terms</span>
+    <span class="stat-chip"><strong>9</strong> abdominopelvic regions</span>
+    <span class="stat-chip"><strong>4</strong> quadrants</span>
+    <span class="stat-chip"><strong>5</strong> body planes</span>
+  </div>
+  <div class="pg">Chapter 2 establishes the spatial language of medicine — how to precisely describe WHERE something is in or on the body. All directional terms assume <strong>anatomic position</strong>: patient standing erect, face forward, arms at sides, palms facing forward, toes forward. Every directional term depends on this universal reference point.</div>
+
+  <div class="sec-hdr">Body organization hierarchy</div>
+  <div class="hier-chain">
+    <div class="hier-node" style="background:var(--color-background-danger);border-color:var(--color-border-danger);color:var(--color-text-danger)">Cells (cyt/o)</div>
+    <span class="hier-arr">→</span>
+    <div class="hier-node" style="background:var(--color-background-warning);border-color:var(--color-border-warning);color:var(--color-text-warning)">Tissues (hist/o)</div>
+    <span class="hier-arr">→</span>
+    <div class="hier-node" style="background:var(--color-background-success);border-color:var(--color-border-success);color:var(--color-text-success)">Organs (viscer/o)</div>
+    <span class="hier-arr">→</span>
+    <div class="hier-node" style="background:var(--color-background-info);border-color:var(--color-border-info);color:var(--color-text-info)">Body systems</div>
+    <span class="hier-arr">→</span>
+    <div class="hier-node" style="background:var(--color-background-secondary);border-color:var(--color-border-secondary);color:var(--color-text-secondary)">Organism</div>
+  </div>
+
+  <div class="card-grid" style="margin-bottom:1.25rem">
+    <div class="ccard"><span class="cwt" style="background:var(--color-background-danger);color:var(--color-text-danger)">cyt/o</span><div class="ctitle">Cells</div><div class="cdef">Smallest functional unit of life. Components: cell membrane, cytoplasm, lysosome, ribosome, mitochondrion, nucleus. Metabolism: anabolism (building up — ana-) + catabolism (breaking down — cata-) = metabolism (meta-).</div></div>
+    <div class="ccard"><span class="cwt" style="background:var(--color-background-warning);color:var(--color-text-warning)">hist/o</span><div class="ctitle">Tissues (4 types)</div><div class="cdef">Epithelial (lining/covering) · Connective (support) · Muscular (movement) · Nervous (signaling). Parenchymal = does the organ's work. Stromal = supportive framework. Histology = study of tissues.</div></div>
+    <div class="ccard"><span class="cwt" style="background:var(--color-background-success);color:var(--color-text-success)">viscer/o</span><div class="ctitle">Organs</div><div class="cdef">Also called viscera (singular: viscus). Parts: apex (apic/o — pointed tip), body (corpor/o — largest part), fundus (fund/o — base), fornix (fornic/o — arched part). One organ may function in multiple systems.</div></div>
+    <div class="ccard"><span class="cwt" style="background:var(--color-background-info);color:var(--color-text-info)">system/o</span><div class="ctitle">11 Body systems</div><div class="cdef">Musculoskeletal · Integumentary · Gastrointestinal · Urinary · Reproductive · Blood/Lymphatic/Immune · Cardiovascular · Respiratory · Nervous/Behavioral · Special Senses · Endocrine. Maintained by homeostasis (home/o + -stasis).</div></div>
+  </div>
+
+  <div class="sec-hdr">Anatomic position — the universal reference</div>
+  <div class="ccard" style="margin-bottom:1.25rem"><div class="ctitle">Standard anatomic position</div><div class="cdef">Patient <strong>standing erect</strong>, <strong>face forward</strong>, <strong>arms at sides</strong>, <strong>palms facing forward</strong> (supinated), <strong>toes pointed forward</strong>. This is the frame of reference for ALL positional and directional terms in medicine. Without this shared reference, "anterior" and "posterior" lose their meaning.</div></div>
+
+  <div class="sec-hdr">Quick-reference: directional term pairs</div>
+  <div class="card-grid">
+    <div class="ccard"><div class="ctitle">Anterior ↔ Posterior</div><div class="cdef">Anterior = front (anter/o). Posterior = back (poster/o). Synonyms: ventral (front) and dorsal (back). Example: sternum is anterior to the spine.</div></div>
+    <div class="ccard"><div class="ctitle">Superior ↔ Inferior</div><div class="cdef">Superior = above (super/o). Inferior = below (infer/o). Direction synonyms: cephalad (toward head) and caudad (toward tail). Example: heart is superior to stomach.</div></div>
+    <div class="ccard"><div class="ctitle">Medial ↔ Lateral</div><div class="cdef">Medial = toward midline (medi/o). Lateral = away from midline (later/o). Example: big toe is medial to little toe.</div></div>
+    <div class="ccard"><div class="ctitle">Proximal ↔ Distal</div><div class="cdef">Proximal = closer to origin (proxim/o). Distal = farther from origin (dist/o). Example: elbow is proximal to wrist; wrist is distal to elbow.</div></div>
+    <div class="ccard"><div class="ctitle">Superficial ↔ Deep</div><div class="cdef">Superficial = toward body surface. Deep = toward interior. Example: skin is superficial; bone is deep to skin.</div></div>
+    <div class="ccard"><div class="ctitle">Unilateral ↔ Bilateral</div><div class="cdef">Unilateral (uni- = one side). Bilateral (bi- = both sides). Ipsilateral (ipsi- = same side). Contralateral (contra- = opposite side).</div></div>
+  </div>
+</div>
+
+<!-- DIRECTIONAL TERMS -->
+<div class="sec" id="tab-directional">
+  <div class="pg">All directional terms assume anatomic position. Terms are presented as opposite pairs — the most effective way to learn them. Many pairs have synonyms used interchangeably in clinical practice.</div>
+
+  <div class="sec-hdr">Front and back</div>
+  <div class="opp-grid">
+    <div class="opp-pair">
+      <div class="opp-header" style="background:var(--color-background-info)">Anterior ↔ Posterior</div>
+      <div class="opp-row">
+        <div class="opp-side"><div class="opp-term">Anterior</div><span class="opp-cf" style="background:var(--color-background-info);color:var(--color-text-info)">anter/o</span><div class="opp-def">Front. Abbreviated ant. Synonym: ventral. Example: sternum is anterior to the vertebral column.</div></div>
+        <div class="opp-side"><div class="opp-term">Posterior</div><span class="opp-cf" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">poster/o</span><div class="opp-def">Back. Abbreviated pos. Synonym: dorsal. Example: vertebral column is posterior to the sternum.</div></div>
+      </div>
+    </div>
+    <div class="opp-pair">
+      <div class="opp-header" style="background:var(--color-background-info)">Ventral ↔ Dorsal</div>
+      <div class="opp-row">
+        <div class="opp-side"><div class="opp-term">Ventral</div><span class="opp-cf" style="background:var(--color-background-info);color:var(--color-text-info)">ventr/o</span><div class="opp-def">Belly/front side. Synonym for anterior. Ventral cavities = thoracic, abdominal, pelvic (TAP).</div></div>
+        <div class="opp-side"><div class="opp-term">Dorsal</div><span class="opp-cf" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">dors/o</span><div class="opp-def">Back surface. Synonym for posterior. Dorsal cavities = cranial + spinal.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-hdr">Above and below</div>
+  <div class="opp-grid">
+    <div class="opp-pair">
+      <div class="opp-header" style="background:var(--color-background-success)">Superior ↔ Inferior</div>
+      <div class="opp-row">
+        <div class="opp-side"><div class="opp-term">Superior</div><span class="opp-cf" style="background:var(--color-background-success);color:var(--color-text-success)">super/o</span><div class="opp-def">Above. Abbreviated sup. Synonym direction: cephalad. Example: heart is superior to stomach.</div></div>
+        <div class="opp-side"><div class="opp-term">Inferior</div><span class="opp-cf" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">infer/o</span><div class="opp-def">Below. Abbreviated inf. Synonym direction: caudad. Example: stomach is inferior to diaphragm.</div></div>
+      </div>
+    </div>
+    <div class="opp-pair">
+      <div class="opp-header" style="background:var(--color-background-success)">Cephalad ↔ Caudad</div>
+      <div class="opp-row">
+        <div class="opp-side"><div class="opp-term">Cephalad</div><span class="opp-cf" style="background:var(--color-background-success);color:var(--color-text-success)">cephal/o + -ad</span><div class="opp-def">Toward the head. Direction of superior/upward. -ad = toward. Used in imaging and embryology.</div></div>
+        <div class="opp-side"><div class="opp-term">Caudad</div><span class="opp-cf" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">caud/o + -ad</span><div class="opp-def">Toward the tail. Direction of inferior/downward. More precise on animals where "up" is ambiguous.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-hdr">Midline and side</div>
+  <div class="opp-grid">
+    <div class="opp-pair">
+      <div class="opp-header" style="background:var(--color-background-warning)">Medial ↔ Lateral</div>
+      <div class="opp-row">
+        <div class="opp-side"><div class="opp-term">Medial</div><span class="opp-cf" style="background:var(--color-background-warning);color:var(--color-text-warning)">medi/o</span><div class="opp-def">Toward midline. Example: big toe is medial to little toe; nose is medial to eyes.</div></div>
+        <div class="opp-side"><div class="opp-term">Lateral</div><span class="opp-cf" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">later/o</span><div class="opp-def">Away from midline, toward side. Example: ears are lateral to nose; little toe is lateral to big toe.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-hdr">Same side and opposite side</div>
+  <div class="opp-grid">
+    <div class="opp-pair">
+      <div class="opp-header" style="background:var(--color-background-danger)">Ipsilateral ↔ Contralateral</div>
+      <div class="opp-row">
+        <div class="opp-side"><div class="opp-term">Ipsilateral</div><span class="opp-cf" style="background:var(--color-background-danger);color:var(--color-text-danger)">ipsi-</span><div class="opp-def">Same side. ipsi- = same. Right arm and right leg are ipsilateral. Most cranial nerve functions are ipsilateral.</div></div>
+        <div class="opp-side"><div class="opp-term">Contralateral</div><span class="opp-cf" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">contra-</span><div class="opp-def">Opposite side. Strokes cause contralateral deficits — right brain damage = left side weakness.</div></div>
+      </div>
+    </div>
+    <div class="opp-pair">
+      <div class="opp-header" style="background:var(--color-background-danger)">Unilateral ↔ Bilateral</div>
+      <div class="opp-row">
+        <div class="opp-side"><div class="opp-term">Unilateral</div><span class="opp-cf" style="background:var(--color-background-danger);color:var(--color-text-danger)">uni-</span><div class="opp-def">One side only. Unilateral hearing loss (one ear). Unicycle = one wheel.</div></div>
+        <div class="opp-side"><div class="opp-term">Bilateral</div><span class="opp-cf" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">bi-</span><div class="opp-def">Both sides. Bilateral pneumonia (both lungs). Bicycle = two wheels. ⚠ bi- (two) ≠ bi/o (life).</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-hdr">Near and far from origin</div>
+  <div class="opp-grid">
+    <div class="opp-pair">
+      <div class="opp-header" style="background:var(--color-background-info)">Proximal ↔ Distal</div>
+      <div class="opp-row">
+        <div class="opp-side"><div class="opp-term">Proximal</div><span class="opp-cf" style="background:var(--color-background-info);color:var(--color-text-info)">proxim/o</span><div class="opp-def">Closer to origin/attachment. Elbow is proximal to wrist. For organs: closer to beginning.</div></div>
+        <div class="opp-side"><div class="opp-term">Distal</div><span class="opp-cf" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">dist/o</span><div class="opp-def">Farther from origin/attachment. Wrist is distal to elbow; hand is distal to wrist.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-hdr">Surface and interior</div>
+  <div class="opp-grid">
+    <div class="opp-pair">
+      <div class="opp-header" style="background:var(--color-background-secondary)">Superficial ↔ Deep</div>
+      <div class="opp-row">
+        <div class="opp-side"><div class="opp-term">Superficial</div><span class="opp-cf" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">toward surface</span><div class="opp-def">Toward body surface. Skin is superficial to muscle. A superficial wound involves only the skin layer.</div></div>
+        <div class="opp-side"><div class="opp-term">Deep</div><span class="opp-cf" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">toward interior</span><div class="opp-def">Away from surface, toward interior. Bones are deep to muscles. A deep wound reaches muscle or bone.</div></div>
+      </div>
+    </div>
+    <div class="opp-pair">
+      <div class="opp-header" style="background:var(--color-background-secondary)">Body position</div>
+      <div class="opp-row">
+        <div class="opp-side"><div class="opp-term">Supine</div><span class="opp-cf" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">lying face up</span><div class="opp-def">Lying on back, face upward. Used for many exams and surgical procedures. Palm face up = supinated.</div></div>
+        <div class="opp-side"><div class="opp-term">Prone</div><span class="opp-cf" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">lying face down</span><div class="opp-def">Lying on abdomen, face down. Used for posterior procedures, spine surgery. Palm face down = pronated.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-hdr">Additional directional terms</div>
+  <table class="dtable"><colgroup><col style="width:18%"><col style="width:18%"><col style="width:64%"></colgroup>
+    <thead><tr><th>Term</th><th>Word part</th><th>Definition & notes</th></tr></thead>
+    <tbody>
+      <tr><td class="mean">Dextrad</td><td><span class="tpill" style="background:var(--color-background-info);color:var(--color-text-info)">dextr/o</span></td><td>Toward the right side. "Dextrous" = skilled. Only means right in medical terminology — no value judgment.</td></tr>
+      <tr><td class="mean">Sinistrad</td><td><span class="tpill" style="background:var(--color-background-info);color:var(--color-text-info)">sinistr/o, levo-</span></td><td>Toward the left side. "Sinister" only means left in medicine. levo- also means left (levorotation, levodopa).</td></tr>
+      <tr><td class="mean">Afferent</td><td><span class="tpill" style="background:var(--color-background-warning);color:var(--color-text-warning)">af-</span></td><td>Carrying toward a center. Afferent nerves carry signals TO the brain (sensory). Afferent arteriole carries blood TO the glomerulus.</td></tr>
+      <tr><td class="mean">Efferent</td><td><span class="tpill" style="background:var(--color-background-warning);color:var(--color-text-warning)">ef-</span></td><td>Carrying away from a center. Efferent nerves carry signals AWAY from the brain (motor). Efferent arteriole carries blood AWAY from the glomerulus.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- BODY REGIONS -->
+<div class="sec" id="tab-regions">
+  <div class="pg">Body cavities, the 9 abdominopelvic regions, 4 quadrants, and 5 body planes — the spatial reference systems used in clinical documentation and imaging.</div>
+
+  <div class="sec-hdr">Body cavities</div>
+  <div class="card-grid">
+    <div class="ccard"><span class="cwt" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">Dorsal (posterior)</span><div class="ctitle">Cranial + Spinal</div><div class="cdef"><strong>Cranial cavity (crani/o):</strong> within the skull; contains brain. <strong>Spinal cavity (spin/o):</strong> within vertebral column; contains spinal cord. Both are continuous and protected by bone.</div></div>
+    <div class="ccard"><span class="cwt" style="background:var(--color-background-info);color:var(--color-text-info)">Ventral (anterior) = TAP</span><div class="ctitle">Thoracic + Abdominal + Pelvic</div><div class="cdef"><strong>Thoracic (thorac/o):</strong> within rib cage; heart + lungs + mediastinum. <strong>Abdominal (abdomin/o):</strong> below diaphragm; lined by peritoneum; digestive organs. <strong>Pelvic (pelv/i):</strong> within pelvic bones; bladder + reproductive organs + rectum. TAP mnemonic!</div></div>
+    <div class="ccard"><span class="cwt" style="background:var(--color-background-info);color:var(--color-text-info)">Thoracic subdivisions</span><div class="ctitle">Mediastinum + Pleural + Pericardial</div><div class="cdef"><strong>Mediastinum (mediastin/o):</strong> central partition; contains heart, trachea, esophagus, great vessels. <strong>Pleural cavities (pleur/o):</strong> right and left; each contains a lung. <strong>Pericardial cavity:</strong> within pericardium (around the heart).</div></div>
+    <div class="ccard"><span class="cwt" style="background:var(--color-background-success);color:var(--color-text-success)">Abdominal features</span><div class="ctitle">Diaphragm + Peritoneum</div><div class="cdef"><strong>Diaphragm (diaphragm/o, phren/o):</strong> muscular dome separating thoracic from abdominal cavity; primary breathing muscle. <strong>Peritoneum (peritone/o):</strong> membrane lining the abdominal cavity. Parietal = lines walls; visceral = covers organs.</div></div>
+  </div>
+
+  <div class="sec-hdr">9 abdominopelvic regions</div>
+  <div class="pg" style="margin-bottom:.75rem">Precise anatomical description — remember: patient's left = your right when facing them.</div>
+  <div class="region-grid">
+    <div class="region-cell" style="background:var(--color-background-warning)"><div class="rn">Right hypochondriac</div><div class="rs">Liver (right), gallbladder</div></div>
+    <div class="region-cell" style="background:var(--color-background-danger)"><div class="rn">Epigastric</div><div class="rs">Stomach, liver (left), pancreas</div></div>
+    <div class="region-cell" style="background:var(--color-background-warning)"><div class="rn">Left hypochondriac</div><div class="rs">Spleen, stomach, left kidney</div></div>
+    <div class="region-cell" style="background:var(--color-background-secondary)"><div class="rn">Right lumbar</div><div class="rs">Ascending colon, right kidney</div></div>
+    <div class="region-cell" style="background:var(--color-background-info)"><div class="rn">Umbilical</div><div class="rs">Umbilicus, small intestine</div></div>
+    <div class="region-cell" style="background:var(--color-background-secondary)"><div class="rn">Left lumbar</div><div class="rs">Descending colon, left kidney</div></div>
+    <div class="region-cell" style="background:var(--color-background-success)"><div class="rn">Right iliac/inguinal</div><div class="rs">Cecum, appendix (McBurney's pt)</div></div>
+    <div class="region-cell" style="background:var(--color-background-success)"><div class="rn">Hypogastric</div><div class="rs">Bladder, uterus, sigmoid colon</div></div>
+    <div class="region-cell" style="background:var(--color-background-success)"><div class="rn">Left iliac/inguinal</div><div class="rs">Sigmoid colon, left ureter</div></div>
+  </div>
+
+  <div class="sec-hdr">4 abdominopelvic quadrants</div>
+  <div class="quad-grid">
+    <div class="quad-cell"><div class="qn">RUQ</div><div class="qa">Right Upper Quadrant</div><div class="qo">Liver, gallbladder, right kidney, duodenum</div></div>
+    <div class="quad-cell"><div class="qn">LUQ</div><div class="qa">Left Upper Quadrant</div><div class="qo">Stomach, spleen, pancreas (tail), left kidney</div></div>
+    <div class="quad-cell"><div class="qn">RLQ</div><div class="qa">Right Lower Quadrant</div><div class="qo">Cecum, appendix (McBurney's point), right ovary</div></div>
+    <div class="quad-cell"><div class="qn">LLQ</div><div class="qa">Left Lower Quadrant</div><div class="qo">Sigmoid colon, left ovary (Munro's point)</div></div>
+  </div>
+
+  <div class="sec-hdr">5 body planes</div>
+  <table class="dtable"><colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>Plane</th><th>Description & clinical use</th></tr></thead>
+    <tbody>
+      <tr><td class="mean">Sagittal plane</td><td>Vertical plane dividing body into LEFT and RIGHT portions (not necessarily equal). Multiple sagittal planes exist at various positions.</td></tr>
+      <tr><td class="mean">Midsagittal plane</td><td>Specific sagittal plane dividing the body into EQUAL left and right halves — exactly through the midline. Passes through nose, navel, and spine. Also called the median plane.</td></tr>
+      <tr><td class="mean">Frontal plane (Coronal)</td><td>Vertical plane dividing body into ANTERIOR (front) and POSTERIOR (back) portions. Runs side to side. Coronal MRI brain images are in this plane — show left/right and up/down.</td></tr>
+      <tr><td class="mean">Transverse plane (Cross-sectional)</td><td>Horizontal plane dividing body into SUPERIOR (upper) and INFERIOR (lower) portions. Also called axial plane. CT scans typically produce transverse plane images. At any level of the body.</td></tr>
+      <tr><td class="mean">Oblique plane</td><td>Any plane cutting diagonally — not along a standard axis. Some imaging and surgical approaches use oblique planes for optimal visualization.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sec-hdr">Surface anatomy terms by region</div>
+  <div class="card-grid">
+    <div class="ccard"><span class="cwt" style="background:var(--color-background-info);color:var(--color-text-info)">Head & Neck (ventral)</span><div class="cdef">Buccal (cheek) · Cephalic (head) · Cervical (neck) · Cranial (skull) · Facial (face) · Frontal (forehead) · Mental (chin) · Nasal (nose) · Ocular (eye) · Oral (mouth) · Otic (ear)</div></div>
+    <div class="ccard"><span class="cwt" style="background:var(--color-background-success);color:var(--color-text-success)">Trunk (ventral)</span><div class="cdef">Abdominal · Axillary (armpit) · Coxal (hip) · Deltoid (shoulder) · Inguinal (groin) · Mammary (breast) · Pelvic · Sternal · Thoracic · Umbilical</div></div>
+    <div class="ccard"><span class="cwt" style="background:var(--color-background-warning);color:var(--color-text-warning)">Extremities (ventral)</span><div class="cdef">Arms: Antecubital (front of elbow) · Brachial (upper arm) · Carpal (wrist) · Palmar (palm) · Digital (finger)<br>Legs: Crural (leg) · Femoral (thigh) · Patellar (kneecap) · Pedal (foot) · Plantar (sole)</div></div>
+    <div class="ccard"><span class="cwt" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">Dorsal surface</span><div class="cdef">Acromial (shoulder tip) · Gluteal (buttock) · Lumbar (lower back) · Nuchal (back of neck) · Sacral · Scapular (shoulder blade) · Vertebral (spine) · Popliteal (behind knee) · Sural (calf)</div></div>
+  </div>
+</div>
+
+<!-- PREFIXES & SUFFIXES -->
+<div class="sec" id="tab-prefixes">
+  <div class="pg">Chapter 2 has only 7 prefixes and 2 suffixes — the fewest of any chapter. These prefixes create many of the most important directional terms in clinical medicine.</div>
+
+  <div class="sec-hdr">Prefixes (7)</div>
+  <table class="dtable"><colgroup><col style="width:12%"><col style="width:24%"><col></colgroup>
+    <thead><tr><th>Prefix</th><th>Meaning</th><th>Examples & notes</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">bi-</td><td class="mean">two, both</td><td>Bilateral (both sides), biceps (two heads), bifurcation (splitting into two). ⚠ bi- (two) ≠ bi/o (life/living — as in biopsy, biology). Context rules!</td></tr>
+      <tr><td class="wp">contra-</td><td class="mean">against, opposite</td><td>Contralateral (opposite side), contraindication, contraception. Example: brain strokes cause contralateral deficits.</td></tr>
+      <tr><td class="wp">epi-</td><td class="mean">above, upon, on</td><td>Epigastric (above stomach — name of abdominopelvic region), epidermis (upon the skin), epicardium (upon the heart). Introduced Ch.1; used here for the abdominopelvic region.</td></tr>
+      <tr><td class="wp">ipsi-</td><td class="mean">same</td><td>Ipsilateral (same side). Latin prefix ipsi- = same. Most cranial nerve functions are ipsilateral.</td></tr>
+      <tr><td class="wp">meta-</td><td class="mean">change, beyond, after</td><td>Metabolism (energy transformation), metastasis (cancer spread beyond primary site), metamorphosis (form change).</td></tr>
+      <tr><td class="wp">mid-</td><td class="mean">middle</td><td>Midsagittal (middle sagittal = equal left/right division), midline (center line of body), midclavicular.</td></tr>
+      <tr><td class="wp">uni-</td><td class="mean">one</td><td>Unilateral (one side only). Think: unicycle = one wheel vs bicycle (bi- = two wheels).</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sec-hdr">Suffixes (2)</div>
+  <table class="dtable"><colgroup><col style="width:12%"><col style="width:24%"><col></colgroup>
+    <thead><tr><th>Suffix</th><th>Meaning</th><th>Examples & notes</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">-ad</td><td class="mean">toward, in the direction of</td><td>Cephalad (toward head), caudad (toward tail), dextrad (toward right), sinistrad (toward left). -ad indicates DIRECTION OF MOVEMENT. ⚠ -ad (direction) ≠ -al (pertaining to).</td></tr>
+      <tr><td class="wp">-um</td><td class="mean">structure, tissue, thing</td><td>Mediastinum (structure in the middle of chest), pericardium (around heart), peritoneum, cranium. Latin: plural = -a (cranium → crania; peritoneum → peritonea).</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sec-hdr">Look-alike pairs to distinguish</div>
+  <div class="card-grid">
+    <div class="ccard"><div class="ctitle">bi- vs bi/o</div><div class="cdef">bi- = TWO (bilateral, biceps, bifurcation). bi/o = LIFE (biopsy, biology, antibiotic). Completely different word parts — the hyphen vs slash notation distinguishes them in study materials.</div></div>
+    <div class="ccard"><div class="ctitle">-ad vs -al</div><div class="cdef">-ad = TOWARD (direction of movement): cephalad, caudad. -al = PERTAINING TO (descriptive): cranial, lateral. "Moving cephalad" = moving toward the head. "Cranial nerve" = nerve pertaining to the cranium/skull.</div></div>
+    <div class="ccard"><div class="ctitle">meta- in context</div><div class="cdef">meta- = change/beyond/after. Metabolism = energy CHANGE. Metastasis = cancer goes BEYOND the primary site. Metaphysis = region BEYOND the growth plate. The specific meaning varies by term.</div></div>
+    <div class="ccard"><div class="ctitle">pelv/i vs pelv/o</div><div class="cdef">pelv/i is the standard combining form for the pelvis — it uses 'i' instead of the usual 'o' as the combining vowel. This is an uncommon exception. Watch for it: pelvic (pelv/i + -c) not "pelvoc."</div></div>
+  </div>
+</div>
+
+<!-- COMBINING FORMS -->
+<div class="sec" id="tab-combining">
+  <div class="pg">Chapter 2 introduces 18 combining forms from the PDF, primarily directional and anatomical. Additional combining forms from the slides cover cell/tissue structures, organ parts, and cavity membranes.</div>
+
+  <div class="sec-hdr">Core combining forms — PDF list (18)</div>
+  <table class="dtable"><colgroup><col style="width:16%"><col style="width:20%"><col></colgroup>
+    <thead><tr><th>Combining form</th><th>Meaning</th><th>Examples & notes</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">abdomin/o</td><td class="mean">abdomen</td><td>Abdominal (pertaining to abdomen). ⚠ abdomen = REGION not an organ. ≠ gastr/o (stomach = specific organ). Note: 'e' changes to 'i' in the combining form (abdomin/o not abdomen/o).</td></tr>
+      <tr><td class="wp">anter/o</td><td class="mean">front, anterior</td><td>Anterior (anter/o + -ior = front side), anteroposterior (AP — front-to-back, as in AP chest X-ray).</td></tr>
+      <tr><td class="wp">crani/o</td><td class="mean">cranium, skull</td><td>Cranial (pertaining to skull), craniotomy (incision into skull), cranial cavity (dorsal cavity containing brain).</td></tr>
+      <tr><td class="wp">cyt/o</td><td class="mean">cell</td><td>Cytology (study of cells), cytoplasm (cell fluid), cytologist. Smallest unit in the body organization hierarchy.</td></tr>
+      <tr><td class="wp">dist/o</td><td class="mean">far, distal</td><td>Distal (far from origin). Wrist is distal to elbow; fingers distal to wrist.</td></tr>
+      <tr><td class="wp">dors/o</td><td class="mean">back, dorsal</td><td>Dorsal (back surface), dorsal cavities (cranial + spinal). Synonym for posterior.</td></tr>
+      <tr><td class="wp">hist/o</td><td class="mean">tissue</td><td>Histology (study of tissues), histologist, histological exam = microscopic tissue examination.</td></tr>
+      <tr><td class="wp">infer/o</td><td class="mean">below, inferior</td><td>Inferior (below), abbreviated inf. Stomach is inferior to diaphragm.</td></tr>
+      <tr><td class="wp">later/o</td><td class="mean">side, lateral</td><td>Lateral (away from midline). Used in: ipsilateral, contralateral, bilateral, unilateral.</td></tr>
+      <tr><td class="wp">medi/o</td><td class="mean">middle, medial</td><td>Medial (toward midline). Big toe is medial to little toe.</td></tr>
+      <tr><td class="wp">pelv/i</td><td class="mean">pelvis, pelvic cavity</td><td>Pelvic (pertaining to pelvis), abdominopelvic. ⚠ Uses 'i' not 'o' as combining vowel — uncommon exception.</td></tr>
+      <tr><td class="wp">poster/o</td><td class="mean">back, posterior</td><td>Posterior (back side), posteroanterior (PA — back to front, as in PA chest X-ray). Abbreviated pos.</td></tr>
+      <tr><td class="wp">proxim/o</td><td class="mean">near, proximal</td><td>Proximal (near origin). Elbow is proximal to wrist; shoulder proximal to elbow.</td></tr>
+      <tr><td class="wp">super/o</td><td class="mean">above, superior</td><td>Superior (above), abbreviated sup. Heart is superior to stomach. ⚠ super/o ≠ superficial.</td></tr>
+      <tr><td class="wp">thorac/o</td><td class="mean">chest, thorax</td><td>Thoracic (pertaining to chest), thoracotomy, thoracic cavity (ventral; contains heart + lungs).</td></tr>
+      <tr><td class="wp">umbilic/o</td><td class="mean">umbilicus, navel</td><td>Umbilical (pertaining to navel), umbilical region (central abdominopelvic region).</td></tr>
+      <tr><td class="wp">ventr/o</td><td class="mean">belly, ventral (front)</td><td>Ventral (belly/front side), ventral cavities (TAP: thoracic, abdominal, pelvic). Synonym for anterior.</td></tr>
+      <tr><td class="wp">viscer/o</td><td class="mean">organ, viscera</td><td>Visceral (pertaining to organs), visceral peritoneum (covers organs). Viscera = the internal organs.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sec-hdr">Additional combining forms — from lecture slides</div>
+  <table class="dtable"><colgroup><col style="width:16%"><col style="width:20%"><col></colgroup>
+    <thead><tr><th>Combining form</th><th>Meaning</th><th>Examples & notes</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">caud/o</td><td class="mean">tail, lower part</td><td>Caudad (toward tail), caudal. The coccyx is the caudal end of the spine.</td></tr>
+      <tr><td class="wp">cephal/o</td><td class="mean">head</td><td>Cephalad (toward head), cephalic. Cephalic presentation = head-first fetal position (normal).</td></tr>
+      <tr><td class="wp">dextr/o</td><td class="mean">right side</td><td>Dextrad (toward right), dextrocardia. Only means right in medicine — no value judgment.</td></tr>
+      <tr><td class="wp">diaphragmat/o, phren/o</td><td class="mean">diaphragm</td><td>Phrenic nerve (controls diaphragm — C3, C4, C5). Diaphragm separates thorax from abdomen.</td></tr>
+      <tr><td class="wp">fund/o</td><td class="mean">base, fundus</td><td>Fundus = base or deepest/farthest part of a hollow organ. Fundus of stomach (dome). Fundus of uterus (top, farthest from cervix).</td></tr>
+      <tr><td class="wp">home/o</td><td class="mean">sameness, constant</td><td>Homeostasis (home/o + -stasis = state of balance). Essential for life.</td></tr>
+      <tr><td class="wp">mediastin/o</td><td class="mean">mediastinum</td><td>Mediastinal (pertaining to mediastinum), mediastinoscopy. Central chest partition between pleural sacs.</td></tr>
+      <tr><td class="wp">peritone/o</td><td class="mean">peritoneum</td><td>Peritoneal, peritonitis (inflammation), peritoneal dialysis. Largest serous membrane in the body.</td></tr>
+      <tr><td class="wp">pleur/o</td><td class="mean">pleura, pleural cavity</td><td>Pleural (pertaining to pleura), pleuritis/pleurisy, pleural effusion (fluid in pleural cavity).</td></tr>
+      <tr><td class="wp">sinistr/o, levo-</td><td class="mean">left side</td><td>Sinistrad (toward left), levorotation, levodopa, levothyroxine. Only means left in medicine.</td></tr>
+      <tr><td class="wp">spin/o</td><td class="mean">spine, spinal cord</td><td>Spinal (pertaining to spine), spinal cavity (dorsal cavity containing spinal cord).</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- KEY TERMS -->
+<div class="sec" id="tab-keyterms">
+  <div class="pg">All 33 key terms from the Chapter 2 PDF list, fully defined with combining forms and clinical notes.</div>
+
+  <div class="sec-hdr">Directional terms</div>
+  <table class="dtable"><colgroup><col style="width:18%"><col style="width:82%"></colgroup>
+    <thead><tr><th>Term</th><th>Definition & clinical notes</th></tr></thead>
+    <tbody>
+      <tr><td class="mean">Anterior</td><td>Front (anter/o + -ior). Abbreviated ant. Synonym: ventral. Sternum is anterior to the vertebral column.</td></tr>
+      <tr><td class="mean">Bilateral</td><td>Both sides (bi- + later/o + -al). Bilateral pneumonia = both lungs. bi- = two; compare unilateral (one), contralateral (opposite).</td></tr>
+      <tr><td class="mean">Caudad</td><td>Toward the tail (caud/o + -ad). Direction of inferior/downward. More useful in anatomy of animals. Equivalent to inferior in direction.</td></tr>
+      <tr><td class="mean">Cephalad</td><td>Toward the head (cephal/o + -ad). Direction of superior/upward. Used in imaging and surgery. Diaphragm moves cephalad during exhalation.</td></tr>
+      <tr><td class="mean">Contralateral</td><td>Opposite side (contra- + later/o + -al). Brain strokes cause contralateral deficits — right brain = left side weakness.</td></tr>
+      <tr><td class="mean">Deep</td><td>Away from body surface, toward interior. Bones are deep to muscles. Opposite of superficial.</td></tr>
+      <tr><td class="mean">Distal</td><td>Farther from origin/attachment (dist/o + -al). Wrist is distal to elbow; fingers are distal to wrist.</td></tr>
+      <tr><td class="mean">Dorsal</td><td>Back surface (dors/o + -al). Synonym for posterior. Dorsal cavities = cranial + spinal.</td></tr>
+      <tr><td class="mean">Inferior</td><td>Below (infer/o + -ior). Abbreviated inf. Synonym direction: caudad. Stomach is inferior to diaphragm.</td></tr>
+      <tr><td class="mean">Ipsilateral</td><td>Same side (ipsi- + later/o + -al). Right arm and right leg are ipsilateral. Most cranial nerve functions are ipsilateral.</td></tr>
+      <tr><td class="mean">Lateral</td><td>Away from midline, toward side (later/o + -al). Ears are lateral to nose; little toe is lateral to big toe.</td></tr>
+      <tr><td class="mean">Medial</td><td>Toward midline (medi/o + -al). Big toe is medial to little toe; nose is medial to eyes.</td></tr>
+      <tr><td class="mean">Posterior</td><td>Back (poster/o + -ior). Abbreviated pos. Synonym: dorsal. Vertebral column is posterior to sternum.</td></tr>
+      <tr><td class="mean">Proximal</td><td>Closer to origin/attachment (proxim/o + -al). Elbow is proximal to wrist; shoulder is proximal to elbow.</td></tr>
+      <tr><td class="mean">Superficial</td><td>Toward body surface. Skin is superficial to muscle. Opposite of deep.</td></tr>
+      <tr><td class="mean">Superior</td><td>Above (super/o + -ior). Abbreviated sup. Synonym direction: cephalad. Heart is superior to stomach.</td></tr>
+      <tr><td class="mean">Unilateral</td><td>One side only (uni- + later/o + -al). Unilateral hearing loss = one ear. Unicycle = one wheel.</td></tr>
+      <tr><td class="mean">Ventral</td><td>Belly/front surface (ventr/o + -al). Synonym for anterior. Ventral cavities = Thoracic, Abdominal, Pelvic (TAP).</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sec-hdr">Anatomical region terms</div>
+  <table class="dtable"><colgroup><col style="width:18%"><col style="width:82%"></colgroup>
+    <thead><tr><th>Term</th><th>Definition & clinical notes</th></tr></thead>
+    <tbody>
+      <tr><td class="mean">Abdominal</td><td>Pertaining to the abdomen (abdomin/o + -al). Abdomen = region between diaphragm and pelvis. ⚠ ≠ gastric (which refers to the stomach organ).</td></tr>
+      <tr><td class="mean">Cranial</td><td>Pertaining to the cranium/skull (crani/o + -al). Cranial cavity (dorsal) contains the brain. 12 cranial nerves originate in the brain.</td></tr>
+      <tr><td class="mean">Epigastric</td><td>Above the stomach (epi- + gastr/o + -ic). Upper middle abdominopelvic region. Common site of pain in GERD and pancreatitis.</td></tr>
+      <tr><td class="mean">Frontal plane</td><td>Vertical plane dividing body into anterior and posterior portions. Also: coronal plane. Coronal MRI brain images are in this plane.</td></tr>
+      <tr><td class="mean">Hypochondriac</td><td>Below the cartilage (hypo- + chondr/o + -iac). Right and left upper lateral abdominopelvic regions. Everyday meaning derives from ancient belief this region caused anxiety about illness.</td></tr>
+      <tr><td class="mean">Hypogastric</td><td>Below the stomach (hypo- + gastr/o + -ic). Lower middle abdominopelvic region. Contains bladder, uterus, sigmoid colon.</td></tr>
+      <tr><td class="mean">Inguinal</td><td>Pertaining to the groin. Right and left lower lateral abdominopelvic regions. Clinical: inguinal hernia (most common hernia type).</td></tr>
+      <tr><td class="mean">Lumbar</td><td>Pertaining to the lower back. Right and left middle lateral abdominopelvic regions. Lumbar vertebrae = L1-L5. Lumbar puncture = spinal tap.</td></tr>
+      <tr><td class="mean">Midsagittal plane</td><td>Vertical plane dividing body into EQUAL left and right halves through the exact midline. Passes through nose, navel, and spine. Also: median plane.</td></tr>
+      <tr><td class="mean">Pelvic</td><td>Pertaining to pelvis (pelv/i + -c). Pelvic cavity = inferior ventral cavity containing bladder, uterus/prostate, rectum. ⚠ pelv/i uses 'i' not 'o'.</td></tr>
+      <tr><td class="mean">Spinal</td><td>Pertaining to the spine (spin/o + -al). Spinal cavity = dorsal cavity within vertebral column containing spinal cord.</td></tr>
+      <tr><td class="mean">Thoracic</td><td>Pertaining to chest/thorax (thorac/o + -ic). Thoracic cavity contains heart + lungs. Enclosed by ribs, sternum, and thoracic vertebrae (T1-T12).</td></tr>
+      <tr><td class="mean">Transverse plane</td><td>Horizontal plane dividing body into superior and inferior portions. Also: axial or cross-sectional plane. CT scans produce transverse plane images.</td></tr>
+      <tr><td class="mean">Umbilical</td><td>Pertaining to the navel (umbilic/o + -al). Central abdominopelvic region. Umbilical hernia = herniation through umbilical ring.</td></tr>
+      <tr><td class="mean">Visceral</td><td>Pertaining to the organs (viscer/o + -al). Visceral peritoneum covers organs; parietal peritoneum lines cavity walls. Visceral pain is poorly localized and often referred.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- FLASHCARDS -->
+<div class="sec" id="tab-flashcards">
+  <div class="fc-controls">
+    <select class="fc-sel" id="fc-cat" onchange="initFC()">
+      <option value="all">All categories</option>
+      <option value="prefix">Prefixes</option>
+      <option value="suffix">Suffixes</option>
+      <option value="combining">Combining forms</option>
+      <option value="term">Key terms</option>
+    </select>
+    <button class="btn" onclick="shuffleFC()">Shuffle</button>
+    <span class="fc-prog" id="fc-prog">—</span>
+  </div>
+  <div class="flashcard" id="flashcard" onclick="flipFC()">
+    <span class="fc-badge" id="fc-badge"></span>
+    <div class="fc-front" id="fc-front"></div>
+    <div class="fc-back" id="fc-back"><div class="meaning" id="fc-meaning"></div><div class="example" id="fc-example"></div></div>
+    <div class="fc-hint" id="fc-hint">click to reveal</div>
+  </div>
+  <div class="fc-actions">
+    <button class="btn btn-no" onclick="markFC(false)">✗ Still learning</button>
+    <button class="btn btn-ok" onclick="markFC(true)">✓ Got it</button>
+    <button class="btn" onclick="prevFC()">← Prev</button>
+    <button class="btn" onclick="nextFC()">Next →</button>
+  </div>
+  <div class="fc-score" id="fc-score"></div>
+</div>
+
+<!-- QUIZ -->
+<div class="sec" id="tab-quiz">
+  <div id="quiz-wrap">
+    <div class="quiz-q" id="quiz-q"></div>
+    <div class="quiz-opts" id="quiz-opts"></div>
+    <div class="qfb" id="quiz-fb"></div>
+    <button class="btn" id="quiz-next" onclick="nextQ()" style="display:none">Next →</button>
+    <div class="qctr" id="quiz-ctr"></div>
+  </div>
+  <div id="quiz-done" style="display:none">
+    <div class="score-wrap">
+      <div class="score-num" id="quiz-final"></div>
+      <div class="score-lbl">correct answers</div>
+      <div style="display:flex;gap:8px;justify-content:center;margin-top:1rem;flex-wrap:wrap">
+        <button class="btn" onclick="startQuiz()">Try again</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div></div>
+<script>
+const TM={prefix:{label:"Prefix",bg:"#fff8e1",c:"#854F0B"},suffix:{label:"Suffix",bg:"#e6f4ea",c:"#1b5e20"},combining:{label:"Combining",bg:"#e8f0fc",c:"#1a5c9c"},term:{label:"Key Term",bg:"#fce8e8",c:"#9c2020"}};
+const DATA=[
+  {term:"bi-",type:"prefix",meaning:"two, both",extra:"bilateral (both sides), biceps (two heads). ⚠ bi- (two) ≠ bi/o (life)"},
+  {term:"contra-",type:"prefix",meaning:"against, opposite",extra:"contralateral (opposite side), contraindication. Strokes cause contralateral deficits."},
+  {term:"epi-",type:"prefix",meaning:"above, upon, on",extra:"epigastric (above stomach — abdominopelvic region), epidermis, epicardium"},
+  {term:"ipsi-",type:"prefix",meaning:"same",extra:"ipsilateral (same side). Latin prefix. Most cranial nerve functions are ipsilateral."},
+  {term:"meta-",type:"prefix",meaning:"change, beyond, after",extra:"metabolism (energy transformation), metastasis (cancer spread beyond primary site)"},
+  {term:"mid-",type:"prefix",meaning:"middle",extra:"midsagittal (middle sagittal = equal left/right division), midline, midclavicular"},
+  {term:"uni-",type:"prefix",meaning:"one",extra:"unilateral (one side only). Think: unicycle = one wheel vs bicycle (bi- = two wheels)"},
+  {term:"-ad",type:"suffix",meaning:"toward, in the direction of",extra:"cephalad (toward head), caudad (toward tail), dextrad (right). ⚠ -ad (direction) ≠ -al (pertaining to)"},
+  {term:"-um",type:"suffix",meaning:"structure, tissue, thing",extra:"mediastinum, pericardium, peritoneum, cranium. Latin: plural = -a (cranium → crania)"},
+  {term:"abdomin/o",type:"combining",meaning:"abdomen (region, not organ)",extra:"abdominal, abdominopelvic. ⚠ abdomen = region; gastr/o = stomach = organ"},
+  {term:"anter/o",type:"combining",meaning:"front, anterior",extra:"anterior (front), anteroposterior (AP X-ray = front to back)"},
+  {term:"crani/o",type:"combining",meaning:"cranium, skull",extra:"cranial, craniotomy, cranial cavity (dorsal; contains brain)"},
+  {term:"cyt/o",type:"combining",meaning:"cell",extra:"cytology (study of cells), cytoplasm, cytologist"},
+  {term:"dist/o",type:"combining",meaning:"far, distal",extra:"distal (far from origin). Wrist is distal to elbow."},
+  {term:"dors/o",type:"combining",meaning:"back, dorsal",extra:"dorsal (back surface), dorsal cavities (cranial + spinal). Synonym: posterior"},
+  {term:"hist/o",type:"combining",meaning:"tissue",extra:"histology (study of tissues), histologist. 4 types: epithelial, connective, muscular, nervous"},
+  {term:"infer/o",type:"combining",meaning:"below, inferior",extra:"inferior (below), abbreviated inf. Stomach is inferior to diaphragm."},
+  {term:"later/o",type:"combining",meaning:"side, lateral",extra:"lateral, ipsilateral, contralateral, bilateral, unilateral"},
+  {term:"medi/o",type:"combining",meaning:"middle, medial",extra:"medial (toward midline). Big toe is medial to little toe."},
+  {term:"pelv/i",type:"combining",meaning:"pelvis, pelvic cavity",extra:"pelvic (pertaining to pelvis). ⚠ Uses 'i' not 'o' as combining vowel — uncommon exception"},
+  {term:"poster/o",type:"combining",meaning:"back, posterior",extra:"posterior (back side), posteroanterior (PA X-ray). Abbreviated pos. Synonym: dorsal"},
+  {term:"proxim/o",type:"combining",meaning:"near, proximal",extra:"proximal (near origin). Elbow is proximal to wrist."},
+  {term:"super/o",type:"combining",meaning:"above, superior",extra:"superior (above), abbreviated sup. Heart is superior to stomach."},
+  {term:"thorac/o",type:"combining",meaning:"chest, thorax",extra:"thoracic, thoracotomy, thoracic cavity (ventral; contains heart + lungs)"},
+  {term:"umbilic/o",type:"combining",meaning:"umbilicus, navel",extra:"umbilical, umbilical region (central abdominopelvic region)"},
+  {term:"ventr/o",type:"combining",meaning:"belly, ventral (front)",extra:"ventral, ventral cavities (TAP: thoracic, abdominal, pelvic). Synonym: anterior"},
+  {term:"viscer/o",type:"combining",meaning:"organ, viscera",extra:"visceral, visceral peritoneum (covers organs). Viscera = the internal organs."},
+  {term:"caud/o",type:"combining",meaning:"tail, lower part",extra:"caudad (toward tail), caudal. Coccyx is the caudal end of the spine."},
+  {term:"cephal/o",type:"combining",meaning:"head",extra:"cephalad (toward head), cephalic. Cephalic presentation = head-first fetal position."},
+  {term:"dextr/o",type:"combining",meaning:"right side",extra:"dextrad (toward right), dextrocardia. Only means right in medicine."},
+  {term:"home/o",type:"combining",meaning:"sameness, constant",extra:"homeostasis (home/o + -stasis = state of balance). Essential for life."},
+  {term:"sinistr/o, levo-",type:"combining",meaning:"left side",extra:"sinistrad (toward left), levorotation, levodopa. Only means left in medicine."},
+  {term:"Anterior",type:"term",meaning:"Front (anter/o + -ior). Abbreviated ant. Synonym: ventral",extra:"Sternum is anterior to the vertebral column"},
+  {term:"Bilateral",type:"term",meaning:"Both sides (bi- + later/o + -al)",extra:"Bilateral pneumonia = both lungs"},
+  {term:"Caudad",type:"term",meaning:"Toward the tail (caud/o + -ad). Inferior direction",extra:"More precise on animals where up/down is ambiguous"},
+  {term:"Cephalad",type:"term",meaning:"Toward the head (cephal/o + -ad). Superior direction",extra:"Diaphragm moves cephalad with exhalation"},
+  {term:"Contralateral",type:"term",meaning:"Opposite side (contra- + later/o + -al)",extra:"Strokes cause contralateral deficits (right brain = left weakness)"},
+  {term:"Cranial",type:"term",meaning:"Pertaining to the skull/cranium (crani/o + -al). Cranial cavity = dorsal cavity containing brain",extra:"12 cranial nerves originate in the brain"},
+  {term:"Deep",type:"term",meaning:"Away from body surface, toward interior",extra:"Bones are deep to muscles. Opposite of superficial."},
+  {term:"Distal",type:"term",meaning:"Farther from origin/attachment (dist/o + -al)",extra:"Wrist is distal to elbow; fingers distal to wrist"},
+  {term:"Dorsal",type:"term",meaning:"Back surface (dors/o + -al). Synonym for posterior. Dorsal cavities = cranial + spinal",extra:"Dorsal fin of a fish = on the back surface"},
+  {term:"Epigastric",type:"term",meaning:"Above the stomach (epi- + gastr/o + -ic). Upper middle abdominopelvic region",extra:"Common site of pain in GERD and pancreatitis"},
+  {term:"Frontal plane",type:"term",meaning:"Vertical plane dividing body into anterior and posterior portions. Also: coronal plane",extra:"Coronal MRI brain images are in this plane"},
+  {term:"Hypochondriac",type:"term",meaning:"Below the cartilage (hypo- + chondr/o + -iac). Right and left upper lateral abdominopelvic regions",extra:"Everyday 'hypochondriac' meaning derives from ancient belief this region caused illness anxiety"},
+  {term:"Hypogastric",type:"term",meaning:"Below the stomach (hypo- + gastr/o + -ic). Lower middle abdominopelvic region",extra:"Contains bladder, uterus, sigmoid colon"},
+  {term:"Inferior",type:"term",meaning:"Below (infer/o + -ior). Abbreviated inf. Synonym direction: caudad",extra:"Stomach is inferior to diaphragm"},
+  {term:"Inguinal",type:"term",meaning:"Pertaining to the groin. Right and left lower lateral abdominopelvic regions",extra:"Inguinal hernia = most common hernia type"},
+  {term:"Ipsilateral",type:"term",meaning:"Same side (ipsi- + later/o + -al). ipsi- = same",extra:"Right arm and right leg are ipsilateral"},
+  {term:"Lateral",type:"term",meaning:"Away from midline, toward side (later/o + -al)",extra:"Ears are lateral to nose; little toe is lateral to big toe"},
+  {term:"Lumbar",type:"term",meaning:"Pertaining to the lower back. Right and left middle lateral abdominopelvic regions",extra:"Lumbar vertebrae = L1-L5; lumbar puncture = spinal tap"},
+  {term:"Medial",type:"term",meaning:"Toward midline (medi/o + -al)",extra:"Big toe is medial to little toe; nose is medial to eyes"},
+  {term:"Midsagittal plane",type:"term",meaning:"Vertical plane dividing body into EQUAL left and right halves through the exact midline",extra:"Passes through nose, navel, and spine. Also: median plane"},
+  {term:"Pelvic",type:"term",meaning:"Pertaining to pelvis (pelv/i + -c). Pelvic cavity = inferior ventral cavity",extra:"Contains bladder, uterus/prostate, rectum. pelv/i uses 'i' not 'o'."},
+  {term:"Posterior",type:"term",meaning:"Back (poster/o + -ior). Abbreviated pos. Synonym: dorsal",extra:"Vertebral column is posterior to sternum"},
+  {term:"Proximal",type:"term",meaning:"Closer to origin/attachment (proxim/o + -al)",extra:"Elbow is proximal to wrist; shoulder proximal to elbow"},
+  {term:"Spinal",type:"term",meaning:"Pertaining to the spine (spin/o + -al). Spinal cavity = dorsal cavity containing spinal cord",extra:"Spinal cord extends from brainstem to ~L1-L2"},
+  {term:"Superficial",type:"term",meaning:"Toward body surface. Opposite of deep",extra:"Skin is superficial to muscle"},
+  {term:"Superior",type:"term",meaning:"Above (super/o + -ior). Abbreviated sup. Synonym direction: cephalad",extra:"Heart is superior to stomach"},
+  {term:"Thoracic",type:"term",meaning:"Pertaining to chest/thorax (thorac/o + -ic). Thoracic cavity contains heart + lungs",extra:"Thoracic vertebrae = T1-T12"},
+  {term:"Transverse plane",type:"term",meaning:"Horizontal plane dividing body into superior and inferior portions. Also: axial/cross-sectional",extra:"CT scans typically produce transverse plane images"},
+  {term:"Umbilical",type:"term",meaning:"Pertaining to navel (umbilic/o + -al). Central abdominopelvic region",extra:"Umbilical hernia = herniation through umbilical ring"},
+  {term:"Unilateral",type:"term",meaning:"One side only (uni- + later/o + -al)",extra:"Unilateral hearing loss = one ear. Unicycle = one wheel."},
+  {term:"Ventral",type:"term",meaning:"Belly/front surface (ventr/o + -al). Synonym for anterior. Ventral cavities = TAP",extra:"TAP = Thoracic, Abdominal, Pelvic"},
+  {term:"Visceral",type:"term",meaning:"Pertaining to organs (viscer/o + -al). Visceral peritoneum covers the organs",extra:"Visceral pain = poorly localized; often referred"},
+];
+let fcCards=[],fcIdx=0,fcFlipped=false,fcGot=new Set(),fcNope=new Set();
+let quizQs=[],quizIdx=0,quizScore=0,quizAnswered=false;
+function showTab(id,btn){
+  document.querySelectorAll('.sec').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  btn.classList.add('active');
+  if(id==='flashcards'&&fcCards.length===0)initFC();
+  if(id==='quiz')startQuiz();
+}
+function initFC(){
+  const cat=document.getElementById('fc-cat').value;
+  fcCards=cat==='all'?[...DATA]:DATA.filter(d=>d.type===cat);
+  fcCards.sort(()=>Math.random()-0.5);
+  fcIdx=0;fcFlipped=false;fcGot=new Set();fcNope=new Set();showCard();
+}
+function showCard(){
+  if(!fcCards.length)return;
+  const c=fcCards[fcIdx],m=TM[c.type];
+  const b=document.getElementById('fc-badge');
+  b.textContent=m.label;b.style.background=m.bg;b.style.color=m.c;
+  document.getElementById('fc-front').textContent=c.term;
+  document.getElementById('fc-meaning').textContent=c.meaning;
+  document.getElementById('fc-example').textContent=c.extra?'Note: '+c.extra:'';
+  document.getElementById('fc-front').style.display='block';
+  document.getElementById('fc-back').style.display='none';
+  document.getElementById('fc-hint').style.display='block';
+  fcFlipped=false;
+  document.getElementById('fc-prog').textContent='Card '+(fcIdx+1)+' of '+fcCards.length;
+  updScore();
+}
+function flipFC(){if(fcFlipped)return;fcFlipped=true;document.getElementById('fc-front').style.display='none';document.getElementById('fc-back').style.display='block';document.getElementById('fc-hint').style.display='none';}
+function markFC(ok){if(ok)fcGot.add(fcIdx);else fcNope.add(fcIdx);nextFC();}
+function nextFC(){fcIdx=(fcIdx+1)%fcCards.length;showCard();}
+function prevFC(){fcIdx=(fcIdx-1+fcCards.length)%fcCards.length;showCard();}
+function shuffleFC(){fcCards.sort(()=>Math.random()-0.5);fcIdx=0;showCard();}
+function updScore(){document.getElementById('fc-score').innerHTML='<span style="color:#1b5e20">✓ '+fcGot.size+' got it</span> &nbsp; <span style="color:#9c2020">✗ '+fcNope.size+' still learning</span> &nbsp; <span style="color:#888">'+(fcCards.length-fcGot.size-fcNope.size)+' unseen</span>';}
+function shuffle(a){return[...a].sort(()=>Math.random()-0.5);}
+function startQuiz(){
+  document.getElementById('quiz-wrap').style.display='block';
+  document.getElementById('quiz-done').style.display='none';
+  quizQs=shuffle(DATA).slice(0,15);quizIdx=0;quizScore=0;quizAnswered=false;showQ();
+}
+function showQ(){
+  if(quizIdx>=quizQs.length){endQuiz();return;}
+  const q=quizQs[quizIdx];
+  document.getElementById('quiz-q').textContent='What does "'+q.term+'" mean?';
+  document.getElementById('quiz-fb').textContent='';
+  document.getElementById('quiz-next').style.display='none';
+  document.getElementById('quiz-ctr').textContent='Question '+(quizIdx+1)+' of '+quizQs.length;
+  const wrong=shuffle(DATA.filter(d=>d.term!==q.term)).slice(0,3).map(d=>d.meaning);
+  const opts=shuffle([q.meaning,...wrong]);
+  document.getElementById('quiz-opts').innerHTML=opts.map(function(o){return'<button class="qopt" onclick="checkA(this,\''+o.replace(/\\/g,'\\\\').replace(/'/g,"\\'")+'\')">'+o+'</button>';}).join('');
+  quizAnswered=false;
+  document.getElementById('quiz-opts')._correct=q.meaning;
+}
+function checkA(btn,chosen){
+  if(quizAnswered)return;quizAnswered=true;
+  const correct=document.getElementById('quiz-opts')._correct;
+  document.querySelectorAll('.qopt').forEach(function(o){o.disabled=true;if(o.textContent.trim()===correct.trim())o.classList.add('correct');});
+  const fb=document.getElementById('quiz-fb');
+  if(chosen.trim()===correct.trim()){quizScore++;fb.textContent='✓ Correct!';fb.style.color='#1b5e20';}
+  else{btn.classList.add('wrong');fb.textContent='✗ Correct: '+correct;fb.style.color='#9c2020';}
+  document.getElementById('quiz-next').style.display='inline-block';
+}
+function nextQ(){quizIdx++;showQ();}
+function endQuiz(){document.getElementById('quiz-wrap').style.display='none';document.getElementById('quiz-done').style.display='block';document.getElementById('quiz-final').textContent=quizScore+' / '+quizQs.length;}
+window.onload=function(){document.getElementById('quiz-wrap').style.display='block';}
+</script>
+</body>
+</html>
